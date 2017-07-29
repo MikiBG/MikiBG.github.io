@@ -12,32 +12,23 @@
 		<body>
             <!-- Navbar -->
             <div class="w3-top">
-                <div class="w3-container w3-black"><h2>Theoretical Group on Quantum Transport on Nanostructures</h2></div>
              <ul class="w3-navbar w3-theme-d2 w3-left-align">
               <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
                 <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
               </li>
-              <li><a href="/" class="w3-teal"><i class="fa fa-home"></i></a></li>
-              <li class="w3-hide-small"><a href="/research.html" class="w3-hover-white">Research</a></li>
+              <li><a href="/" class="w3-teal"><i class="fa fa-home w3-margin-right"></i></a></li>
+              <li class="w3-hide-small"><a href="/Research" class="w3-hover-white">Research</a></li>
               <li class="w3-hide-small w3-dropdown-hover">
                 <a href="/People" class="w3-hover-white">People <i class="fa fa-caret-down"></i></a>     
                 <div class="w3-dropdown-content w3-white w3-card-4">
-                    {% for person in site.data.people %}
-                        <a href=#>{{ person.name }}</a>
-                    {% endfor %}
+                  <a href="#">Link</a>
+                  <a href="#">Link</a>
+                  <a href="#">Link</a>
                 </div>
               </li>
-              <li class="w3-hide-small w3-dropdown-hover">
-                <a href="/Former_Members" class="w3-hover-white">Former Members <i class="fa fa-caret-down"></i></a>     
-                <div class="w3-dropdown-content w3-white w3-card-4">
-                    {% for person in site.data.former_members %}
-                        <a href=#>{{ person.name }}</a>
-                    {% endfor %}
-                </div>
-              </li>
-              <li class="w3-hide-small"><a href="/seminars.html" class="w3-hover-white">Seminars</a></li>
-              <li class="w3-hide-small"><a href="/find_us.html" class="w3-hover-white">Find us</a></li>
-              <li class="w3-hide-small"><a href="/join_us.html" class="w3-hover-white">Join us</a></li>
+              <li class="w3-hide-small"><a href="/Former Members" class="w3-hover-white">Former Members</a></li>
+              <li class="w3-hide-small"><a href="/Find us" class="w3-hover-white">Find us</a></li>
+              <li class="w3-hide-small"><a href="/Join us" class="w3-hover-white">Join us</a></li>
 
               <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-teal" title="Search"><i class="fa fa-search"></i></a></li>
              </ul>
@@ -46,35 +37,30 @@
               <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
                 <ul class="w3-navbar w3-left-align w3-theme">
 	        	  <li><a href="/">Home</a></li>
-		          <li><a href="/research.html">Research</a></li>
+		          <li><a href="/about">Research</a></li>
                   <li class="w3-dropdown-hover">
-                  <a href="/People">People <i class="fa fa-caret-down"></i></a>     
+                  <a href="javascript:void(0);" title="Notifications">People<i class="fa fa-caret-down"></i></a>     
                   <div class="w3-dropdown-content w3-light-grey w3-card-4">
-                    {% for person in site.data.people %}
-                        <a href=#>{{ person.name }}</a>
-                    {% endfor %}
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
                   </div>
-                  <a href="/Former_Members">Former Members <i class="fa fa-caret-down"></i></a>     
-                  <div class="w3-dropdown-content w3-light-grey w3-card-4">
-                    {% for person in site.data.former_members %}
-                        <a href=#>{{ person.name }}</a>
-                    {% endfor %}
-                  </div>
-	              <li><a href="/seminars.html">Seminars</a></li>
-	        	  <li><a href="/find_us.html">Find us</a></li>
-	        	  <li><a href="/join_us.html">Join us</a></li>
+	        	  <li><a href="/Former Members">Former Members</a></li>
+	              <li><a href="/Seminars">Seminars</a></li>
+	        	  <li><a href="/Find us">Find us</a></li>
+	        	  <li><a href="/Join us">Join us</a></li>
                 </ul>
               </div>
             </div>
 			
-            <div class="w3-container w3-padding-16 w3-center">
-			</div>
-
             <div class="w3-container w3-padding-64 w3-center">
-			{{ content }}
-			</div>
+ 
 			
-            <footer class="w3-container w3-padding-4 w3-theme-d1 w3-center">
+			{{ content }}
+			
+			</div><!-- /.container -->
+			
+            <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
 	    		<ul>
 	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
 				</ul>
