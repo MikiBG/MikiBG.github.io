@@ -1,0 +1,17 @@
+---
+---
+
+<p align="left">
+{{ reference }}
+
+{% if entry.type=="article" %} 
+    {% if entry.url %}
+        <a href={{ entry.url }}>{{ entry.journal }}, <b>{{ entry.volume }}</b>, {{ entry.pages }}</a>
+    {% else %} 
+        {{ entry.journal }}, <b>{{ entry.volume }}</b>, {{ entry.pages }} 
+    {% endif %}
+({{ entry.year }})
+{% endif %}
+
+{% if entry.arxiv %}<a href={{ entry.arxiv }}>arXiv.</a>{% endif %}
+</p>
